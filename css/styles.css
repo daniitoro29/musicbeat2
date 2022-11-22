@@ -1,0 +1,592 @@
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* VARIABLES */
+:root {
+      --primaryColor: #ffc401;
+      --secondaryColor: #0c0c0c;
+      --darkGrey: #1f1f1f;
+      --blackGrey: #19191b;
+      --greyMedium: #252527;
+      --gris: #363639;
+      --fWhite: #ffffff;
+      --titleSize: 40px;
+      --parrafoSize: 18px;
+      --font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+      font-family: var(--font-family) !important;
+}
+
+/* HEADER */
+header {
+      width: 100%;
+      position: relative;
+      min-height: 100vh;
+      padding-top: 50px;
+      background: #19191b;
+}
+
+header .bg-music {
+      background: var(--secondaryColor);
+      padding: 18px 0;
+      top: 60px;
+      position: fixed;
+      z-index: 99;
+      width: 100%;
+
+}
+
+header nav ul li a {
+      color: var(--fWhite) !important;
+      font-size: var(--parrafoSize);
+      font-weight: 600 !important;
+      transition: .4s;
+}
+
+header nav ul li a:hover {
+      color: var(--primaryColor) !important;
+}
+
+header #hero {
+      width: 100%;
+      position: relative;
+}
+
+header #hero .cont-left h2 {
+      color: var(--fWhite);
+      font-size: 30px;
+      font-weight: 300;
+}
+
+header #hero .cont-left {
+      padding-top: 230px;
+      position: relative;
+      z-index: 1;
+}
+
+header #hero .cont-left h1 {
+      font-size: 70px;
+      color: var(--fWhite);
+      font-weight: 400;
+      background: #19191b;
+}
+
+header #hero .cont-left button {
+      background: var(--primaryColor);
+      color: var(--fWhite);
+      padding: 12px 40px;
+      font-size: 18px;
+      margin-top: 110px;
+}
+
+header #hero .cont-rigth {
+      padding-top: 130px;
+      position: relative;
+      z-index: 0;
+}
+
+header #hero .cont-rigth img {
+      position: relative;
+      left: -155px;
+}
+
+main {
+      width: 100%;
+      position: relative;
+}
+
+#releases {
+      width: 100%;
+      position: relative;
+      background: #313131;
+      padding-top: 150px;
+      padding-bottom: 30px;
+      text-align: center;
+}
+
+#releases h2 {
+      color: var(--fWhite);
+      font-weight: 300;
+      margin-bottom: 70px;
+
+}
+
+#releases h2 span {
+      color: var(--primaryColor);
+      font-weight: 300;
+      margin-bottom: 70px;
+
+}
+
+#releases .card-release {
+      max-width: 233px;
+      margin: 0 auto;
+      text-align: left;
+      color: var(--fWhite);
+}
+
+#releases .card-release img {
+      transition: .4s;
+}
+
+#releases .card-release:hover img {
+      filter: grayscale(100%);
+}
+
+#releases button {
+      background: var(--primaryColor);
+      color: var(--fWhite);
+      padding: 12px 90px;
+      font-size: 18px;
+      margin-top: 20px;
+      border: 0;
+}
+
+#tour {
+      width: 100%;
+      position: relative;
+      background: var(--secondaryColor);
+      padding-top: 150px;
+      padding-bottom: 30px;
+      text-align: center;
+}
+
+#tour article {
+      background: var(--darkGrey);
+      padding: 20px;
+      max-width: 270px;
+}
+
+#tour .card-tour {
+      margin: 0 auto;
+      text-align: center;
+      border: 1px solid var(--fWhite);
+      padding-top: 40px;
+      padding-bottom: 20px;
+      color: var(--fWhite);
+
+}
+
+#tour h2 {
+      color: var(--primaryColor);
+      font-weight: 300;
+}
+
+#tour h2 span {
+      color: var(--fWhite);
+      font-weight: 300;
+      margin-bottom: 70px;
+}
+
+
+#tour .card-tour h4 {
+      font-size: 18px;
+}
+
+#tour .card-tour p {
+      background: var(--gris);
+      padding: 8px 4px;
+      margin-bottom: 50px;
+}
+
+#tour .card-tour button {
+      background: var(--primaryColor);
+      color: var(--fWhite);
+      padding: 8px 15px;
+      font-size: 18px;
+      margin-top: 20px;
+      border: 0;
+}
+
+#tour article:hover {
+      background: var(--fWhite);
+}
+
+#tour article:hover .card-tour {
+      background: var(--fWhite);
+      border: 1px solid var(--primaryColor);
+      color: var(--blackGrey);
+}
+
+#tour article:hover .card-tour p {
+      background: var(--fWhite);
+}
+
+#tour article:hover .card-tour button {
+      background: var(--secondaryColor);
+      color: var(--primaryColor);
+}
+
+#gallery {
+      width: 100%;
+      position: relative;
+      background: var(--greyMedium);
+      padding-top: 70px;
+      padding-bottom: 70px;
+}
+
+#gallery h2 {
+      color: var(--fWhite);
+      font-weight: 300;
+      margin-bottom: 30px;
+}
+
+#gallery h2 span {
+      color: var(--primaryColor);
+      font-weight: 300;
+      margin-bottom: 70px;
+}
+
+footer {
+      padding: 40px;
+      color: var(--primaryColor);
+      text-align: center;
+}
+
+#upcoming {
+      width: 100%;
+      position: relative;
+      background: var(--secondaryColor);
+      padding-top: 70px;
+      padding-bottom: 70px;
+      color: var(--fWhite);
+      padding-left: 10%;
+      column-gap: 1%;
+      row-gap: 20px;
+}
+
+#upcoming .container-cards {
+      row-gap: 20px;
+}
+
+#upcoming h2 {
+      text-align: center;
+      color: var(--primaryColor);
+      font-weight: 300;
+      margin-bottom: 30px;
+}
+
+#upcoming h2 span {
+      color: var(--fWhite);
+      font-weight: 300;
+      margin-bottom: 70px;
+}
+
+#upcoming .cont-two {
+      background: var(--primaryColor);
+      max-width: 70px;
+}
+
+#upcoming .cont-two h3 {
+      text-align: center;
+      margin-top: 50%;
+}
+
+#upcoming .cont-four {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+#upcoming button {
+      background: var(--primaryColor);
+      color: var(--fWhite);
+      padding: 5px 25px;
+      font-size: 18px;
+      margin-top: 20px;
+      border: 0;
+      align-items: center;
+}
+
+#upcoming img {
+      max-width: 400px;
+}
+
+#latest {
+      background-image: url('../img/albums.png');
+      width: 100%;
+      position: relative;
+      padding-top: 70px;
+      padding-bottom: 70px;
+}
+
+#latest h2 {
+      text-align: center;
+      color: var(--fWhite);
+      font-weight: 300;
+      margin-bottom: 30px;
+}
+
+#latest h2 span {
+      color: var(--primaryColor);
+      font-weight: 300;
+      margin-bottom: 70px;
+}
+
+#latest article {
+      background: var(--fWhite);
+      padding: 0;
+      max-width: 270px;
+      text-align: center;
+}
+
+#latest .card-latest .album {
+      text-align: center;
+      width: 100%;
+}
+
+#latest article h3 {
+      margin: 8px 15px 0 15px;
+      font-size: 20px;
+      text-align: center;
+}
+
+#latest article h4 {
+      font-weight: 900;
+      padding-bottom: 0;
+}
+
+#latest button {
+      background: var(--primaryColor);
+      color: var(--fWhite);
+      padding: 5px 25px;
+      font-size: 18px;
+      margin: 10px auto 10px;
+      border: 0;
+}
+
+#recent {
+      background: var(--gris);
+      width: 100%;
+      position: relative;
+      padding-top: 70px;
+      padding-bottom: 70px;
+}
+
+#recent h2 {
+      color: var(--primaryColor);
+      font-weight: 300;
+      margin-bottom: 30px;
+}
+
+#recent h2 span {
+      color: var(--fWhite);
+      font-weight: 300;
+      margin-bottom: 70px;
+}
+
+#recent .container-recent {
+      text-align: center;
+}
+
+#recent .container-recent h2 {
+      align-items: baseline;
+}
+
+footer {
+      background: var(--blackGrey);
+}
+
+footer input {
+      background: var(--gris);
+      border: 1px solid var(--gris);
+      font-size: 12px;
+}
+
+footer #suscribe {
+      font-size: 12px;
+      color: var(--primaryColor);
+      background: none;
+      border: 1px solid var(--primaryColor);
+      margin-right: 35px;
+}
+
+footer .social {
+      background: var(--blackGrey);
+      color: var(--fWhite);
+      border: 1px solid var(--fWhite);
+      font-size: 12px;
+
+}
+
+footer .social img {
+      max-width: 15px;
+}
+
+footer p {
+      margin-left: 20%;
+      padding-top: 10px;
+      color: rgb(181, 179, 179);
+      font-size: 10px;
+}
+
+
+
+/* MAIN */
+
+/* FOOTER */
+/* Tablet */
+
+@media screen and (min-width:700px) and (max-width:990px) {
+      header #hero .cont-left {
+            text-align: center;
+            padding-top: 150px
+      }
+
+      header #hero .cont-rigth {
+            padding-top: 50px;
+            padding-bottom: 50px;
+      }
+
+      header #hero .cont-rigth img {
+            width: 100%;
+            left: 0;
+      }
+
+      header #hero .cont-left button {
+            margin-top: 20px;
+      }
+
+      header #tour article {
+            margin: 2px;
+      }
+
+      nav button .navbar-toggler {
+            color: var(--primaryColor);
+            border: 2px solid var(--primaryColor);
+      }
+
+      .container-upcoming {
+            display: flex;
+            flex-direction: row;
+      }
+
+      #upcoming .cont-one {
+            max-width: 30%;
+      }
+
+      #upcoming .cont-one img {
+            max-width: 100%
+      }
+
+      #upcoming .cont-two {
+            max-width: 5%;
+            font-size: 10px;
+      }
+
+      #upcoming .cont-three {
+            display: flex;
+            font-size: 12px;
+            max-width: 45%;
+            align-items: center;
+      }
+
+      #upcoming .cont-three h3 {
+            font-size: 14px;
+      }
+
+      #upcoming .cont-three h4 {
+            font-size: 12px;
+      }
+
+      #upcoming .cont-four {
+            font-size: 20px;
+            max-width: 20%;
+      }
+
+      #upcoming h3 {
+            font-size: 15px;
+      }
+
+      #latest article {
+            max-width: 200px;
+      }
+
+      #recent img {
+            max-width: 100%;
+      }
+
+
+}
+
+@media screen and (min-width:320px) and (max-width:600px) {
+      body {
+            width: fit-content;
+            ;
+      }
+
+      header #hero .cont-left {
+            padding-top: 120px;
+            font-size: 10px;
+            text-align: center;
+            max-width: fit-content;
+      }
+
+      header #hero .cont-left h2 {
+            font-size: 20px;
+      }
+
+      header #hero .cont-left h1 {
+            font-size: 40px;
+      }
+
+      header #hero .cont-left button {
+            padding: 10px 25px;
+            font-size: 15px;
+            margin-top: 50px;
+      }
+
+      header #hero .cont-rigth {
+            padding-top: 50px;
+      }
+
+      header #hero .cont-rigth img {
+            max-width: 500px;
+      }
+
+      #releases {
+            min-width: 330px;
+            max-width: 590px;
+      }
+
+      #releases .card-release img {
+            width: 100%;
+      }
+
+      #releases button {
+            padding: 5px 30px;
+      }
+
+      #tour article {
+            max-width: 200px;
+      }
+
+      #gallery {
+            min-width: 330px;
+            max-width: 590px;
+      }
+
+      #gallery h2 {
+            text-align: center;
+      }
+
+      #upcoming {
+            display: none;
+      }
+
+      #latest {
+            min-width: 330px;
+            max-width: 590px;
+      }
+      #recent {
+            min-width: 330px;
+            max-width: 590px;
+      }
+      #recent {
+            min-width: 330px;
+            max-width: 590px;
+      }
+}
